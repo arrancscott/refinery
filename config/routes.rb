@@ -4,6 +4,7 @@ Whitespace::Application.routes.draw do
   resources :user_sessions
   resources :users
 
+  get 'not_activated' => 'users#not_activated', :as => :not_activated
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout
 
