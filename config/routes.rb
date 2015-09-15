@@ -4,6 +4,7 @@ Whitespace::Application.routes.draw do
   resources :user_sessions
   resources :users
 
+  get 'not_activated' => 'users#not_activated', :as => :not_activated
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout
 
@@ -12,7 +13,7 @@ Whitespace::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
-  mount Refinery::Core::Engine, :at => '/'
+  mount Refinery::Core::Engine, :at => '/home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

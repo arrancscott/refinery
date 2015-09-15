@@ -1,3 +1,25 @@
+.navbar {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+}
+
+#menu {
+  float: right;
+  padding: 13px 20px 0;
+}
+
+#menu .first, #menu .last {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.brand {
+  font-family: sans-serif;
+  margin-top: 14px;
+  display: inline-block;
+  font-size: 20px;
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -46,7 +68,7 @@ div {
 }
 
 #error_explanation {
-  width: 450px;
+  width: 318px;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;

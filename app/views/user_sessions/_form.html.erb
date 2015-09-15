@@ -9,5 +9,8 @@
   </div>
   <div class="actions">
     <%= submit_tag "Login", class: "btn btn-sm btn-default" %>
+    <span style="float:right;text-align:center">
+      Don't have an account?<br>Sign up <%= link_to 'here', new_user_path %>.
+    </span>
   </div>
 <% end %>
